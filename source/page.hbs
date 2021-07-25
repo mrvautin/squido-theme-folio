@@ -1,22 +1,16 @@
+{{#each posts}}
 <div class="row">
-  {{#each posts}}
-  <div class="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex align-items-stretch">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <p class="card-text">
-          <h2>
-            <a href="/{{this.permalink}}">{{this.title}}</a> 
-          </h2>
-          {{this.summary}}
-        </p>
-        <div class="d-flex justify-content-between align-items-center">
-          <a class="btn btn-outline-secondary" href="/{{this.permalink}}">Read more..</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  {{/each}}
+	<div class="col-xs-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 mb-5">
+		<article class="post">
+			<h2 class="post-title"><a href="/{{this.permalink}}/">{{this.title}}</a></h2>
+			<div class="post-meta mb-2">
+				By {{this.author}} on <time>{{formatdate this.date}}</time>
+			</div>
+			<div class="post-excerpt mb-5">{{this.summary}}....</div>
+		</article>
+	</div>
 </div>
+{{/each}}
 {{!-- Pagination --}}
 {{#if config.pagination}}
 {{#if shouldPaginate}}

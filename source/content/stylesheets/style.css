@@ -9,12 +9,12 @@ body{
 }
 
 a{
-    color: #F95A77 !important;
+    color: #909499 !important;
     text-decoration: none !important;
 }
 
 a:hover{
-    color: #FF96A9 !important;
+    color: #E1E3E6 !important;
     text-decoration: underline !important;
 }
 
@@ -24,25 +24,54 @@ a:hover{
 
 .btn-outline-secondary {
     color: #ffffff !important;
-    background-color: #F95A77 !important;
-    border-color: #F95A77 !important;
+    background-color: #909499 !important;
+    border-color: #909499 !important;
 }
 
 .btn-outline-secondary:hover {
     color: #ffffff !important;
-    background-color: #FF96A9 !important;
-    border-color: #FF96A9 !important;
+    background-color: #E1E3E6 !important;
+    border-color: #E1E3E6 !important;
 }
 
-.jumbo-title {
-    margin-top: 50px;
-    font-size: 5.5rem;
-    font-weight: 700;
+.nav-menu{
+    font-size: 1.2em;
 }
 
-.jumbo-subtitle {
-    font-size: 3.0rem;
+.post{
+    border-bottom: 1px solid #E1E3E6;
+}
+
+.post-title {
+    position: relative;
+    z-index: 10;
+    margin: 0 0 1.1rem;
+    font-size: 3.0em;
+    line-height: 1.25em;
     font-weight: 700;
+    text-indent: -1px;
+}
+
+.post-title a{
+    color: #264653 !important;
+}
+
+.post-meta, .tag, .lead, .post-meta a{
+    color: #909499 !important;
+}
+
+.post-meta a{
+    text-decoration: underline !important;
+}
+
+.author-links a, .socials a{
+    font-size: 1.3rem;
+    padding-right: 10px;
+    color: #E1E3E6;
+}
+
+.tag{
+    font-size: 1.5rem; 
 }
 
 .article-title {

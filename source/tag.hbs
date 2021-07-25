@@ -1,20 +1,37 @@
 <div class="row">
-  <h1>Tag: {{tag}}</h1>
+  <div class="col-xs-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 mt-4 mb-2">
+    <h1 class="tag">Tag: {{tag}}</h1>
+  </div>
+</div>
   {{#each posts}}
-  <div class="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex align-items-stretch">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <p class="card-text">
-          <h2>
-            <a href="/{{this.permalink}}">{{this.title}}</a> 
-          </h2>
-          {{this.summary}}
-        </p>
-        <div class="d-flex justify-content-between align-items-center">
-          <a class="btn btn-outline-secondary" href="/{{this.permalink}}">Read more..</a>
+  <div class="row">
+    <div class="col-xs-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 mb-5">
+      <article class="post">
+        <h2 class="post-title"><a href="/{{this.permalink}}/">{{this.title}}</a></h2>
+        <div class="post-meta mb-2">
+          By {{this.author}} on <time>{{formatdate this.date}}</time>
         </div>
-      </div>
+        <div class="post-excerpt mb-5">{{this.summary}}....</div>
+      </article>
     </div>
   </div>
   {{/each}}
 </div>
+{{!-- Pagination --}}
+{{#if config.pagination}}
+{{#if shouldPaginate}}
+<div class="row">
+  <div class="col-xs-12 col-sm-12 mb-4 text-center">
+    <p class="text-muted">Page {{page}} of {{pages}}</p>
+    <div class="btn-group" role="group">
+    {{#if prevPage }}
+        <a href="/page/{{prevPage}}" class="btn btn-outline-secondary">&laquo; Prev Page</a>
+    {{/if}}
+    {{#if nextPage }}
+        <a href="/page/{{nextPage}}" class="btn btn-outline-secondary">Next Page &raquo;</a>
+    {{/if}}
+    </div>
+  </div>
+</div>
+{{/if}}
+{{/if}}

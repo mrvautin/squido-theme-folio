@@ -27,7 +27,13 @@ const config = {
         port: 4965,
         pagination: true,
         postPerPage: 4,
-        dateFormat: 'dd MMM yyyy'
+        dateFormat: 'dd MMM yyyy',
+        plugins: [
+            {
+                name: 'robots',
+                options: {}
+            }
+        ]
     }
 };
 

@@ -1,6 +1,6 @@
 const config = {
     development: {
-        name: 'sympl',
+        name: 'folio',
         description: 'Thoughts, stories and ideas.',
         twitterHandle: '@mrvautin',
         baseUrl: 'http://localhost:4965',
@@ -18,10 +18,10 @@ const config = {
         ]
     },
     production: {
-        name: 'sympl',
+        name: 'folio',
         description: 'Thoughts, stories and ideas.',
         twitterHandle: '@mrvautin',
-        baseUrl: 'https://blog.squido.org',
+        baseUrl: 'https://folio.squido.org',
         sourcesExt: 'markdown',
         summaryLength: 250,
         port: 4965,

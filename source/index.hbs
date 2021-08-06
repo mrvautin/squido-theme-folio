@@ -1,37 +1,22 @@
-<div class="px-4 py-5 my-5 text-center">
-	<h1 class="display-2 fw-bold">{{config.name}}</h1>
-	<div class="col-lg-6 mx-auto">
-		<p class="lead mb-4">{{config.description}}</p>
-	</div>
-</div>
-{{#each posts}}
 <div class="row">
-	<div class="col-xs-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 mb-5">
-		<article class="post">
-			<h2 class="post-title"><a href="/{{this.permalink}}/">{{this.title}}</a></h2>
-			<div class="post-meta mb-2">
-				By {{this.author}} on <time>{{formatdate this.date}}</time>
-			</div>
-			<div class="post-excerpt mb-5">{{this.summary}}....</div>
-		</article>
+    <div class="col-2 p-0 sidebar">
+      <nav id="navbar" class="navbar navbar-light flex-column align-items-stretch p-3">
+		<a href="index.html" class="mb-lg-auto mt-lg-4">
+			<span class="bg-dark-2 p-2 mb-lg-1 d-none d-lg-inline-block">
+				<img class="img-fluid rounded-circle d-block" src="/content/images/head-shot.png" title="Jane Citizen" alt="">
+			</span>
+			<h1 class="fs-3 text-center mb-3 d-lg-block">Jane Citizen</h1>
+        </a>
+        <nav class="nav nav-pills flex-column">
+			<a class="nav-link text-center active" href="#about">About</a>
+			<a class="nav-link text-center" href="#services">Services</a>
+			<a class="nav-link text-center" href="#resume">Resume</a>
+        </nav>
+      </nav>
+    </div>
+	<div class="col-10 p-0 content">
+		{{#each postList}}
+		{{{this.body}}}
+		{{/each}}
 	</div>
 </div>
-{{/each}}
-{{!-- Pagination --}}
-{{#if config.pagination}}
-{{#if shouldPaginate}}
-<div class="row">
-	<div class="col-xs-12 col-sm-12 mb-4 text-center">
-		<p class="text-muted">Page {{page}} of {{pages}}</p>
-		<div class="btn-group" role="group">
-			{{#if prevPage }}
-			<a href="/page/{{prevPage}}" class="btn btn-outline-secondary">&laquo; Prev Page</a>
-			{{/if}}
-			{{#if nextPage }}
-			<a href="/page/{{nextPage}}" class="btn btn-outline-secondary">Next Page &raquo;</a>
-			{{/if}}
-		</div>
-	</div>
-</div>
-{{/if}}
-{{/if}}

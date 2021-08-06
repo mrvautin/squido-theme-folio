@@ -1,6 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
     var images = document.getElementsByTagName("img");
     for (var i = 0; i < images.length; i++) {
-        images[i].classList.add('img-fluid');
-      }
+      images[i].classList.add('img-fluid');
+    }
+
+    new bootstrap.ScrollSpy(document.body, {
+      target: '#navbar'
+    });
+
+    // $(".animated").animate({
+    //   top: "+=10",
+    //   bottom: "+=10"
+    // }, 5000, function() {
+    //   // Animation complete.
+    // });
 }, false);

@@ -1,20 +1,20 @@
 <div class="row">
-    <div class="col-2 p-0 sidebar">
+    <div class="col-2 p-0 sidebar d-none d-sm-block">
       <nav id="navbar" class="navbar navbar-light flex-column align-items-stretch p-3">
-		<a href="index.html" class="mb-lg-auto mt-lg-4">
+		<a href="/" class="mb-lg-auto mt-lg-4">
 			<span class="bg-dark-2 p-2 mb-lg-1 d-none d-lg-inline-block">
 				<img class="img-fluid rounded-circle d-block" src="/content/images/head-shot.jpg" title="Jane Citizen" alt="">
 			</span>
 			<h1 class="fs-3 text-center mb-3 d-lg-block">Jane Citizen</h1>
         </a>
         <nav class="nav nav-pills flex-column">
-			<a class="nav-link text-center active" href="#about">About</a>
-			<a class="nav-link text-center" href="#services">Services</a>
-			<a class="nav-link text-center" href="#resume">Resume</a>
+			<a class="nav-link text-center active" href="/#about">About</a>
+			<a class="nav-link text-center" href="/#services">Services</a>
+			<a class="nav-link text-center" href="/#resume">Resume</a>
         </nav>
       </nav>
     </div>
-	<div class="col-10 p-0 content">
+	<div class="col-md-10 col-12 p-0 content">
 		{{#each postList}}
 		{{{this.body}}}
 		{{/each}}

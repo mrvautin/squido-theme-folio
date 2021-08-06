@@ -31,7 +31,7 @@ tags:
     </div>
     <div class="brands-grid separator-border mt-5">
       <div class="row">
-        <div class="col-6 col-md-4">
+        <div class="col-12 col-md-4">
           <div class="card shadow p-5 text-center">
             <div class="card-body">
               <h4 class="fs-1 text-primary mb-0"><span class="counter" data-from="0" data-to="10">10</span>+</h4>
@@ -39,7 +39,7 @@ tags:
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-4">
+        <div class="col-12 col-md-4">
           <div class="card shadow p-5 text-center">
             <div class="card-body border-0 border-end">
               <h4 class="fs-1 text-primary mb-0"><span class="counter" data-from="0" data-to="250">250</span>+</h4>
@@ -47,7 +47,7 @@ tags:
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-4">
+        <div class="col-12 col-md-4">
           <div class="card shadow p-5 text-center">
             <div class="card-body border-0 border-end">
               <h4 class="fs-1 text-primary mb-0"><span class="counter" data-from="0" data-to="650">650</span>+</h4>

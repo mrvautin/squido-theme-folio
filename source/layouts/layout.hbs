@@ -52,6 +52,30 @@
 	<script src="/content/javascripts/site{{config.fileEnv}}.js"></script>
 </head>
 <body>
+	<nav class="navbar sticky-top d-block d-sm-none navbar-expand-lg navbar-light bg-dark">
+		<div class="container-fluid">
+			<a class="nav-link p-0 mr-auto text-primary" aria-current="page" href="/">Jane Citizen</a>
+			<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="lni lni-menu"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarToggler">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="/">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/#services">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/#resume">Resume</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	<main class="container-fluid">
 		{{{body}}}
 	</main>

@@ -152,7 +152,6 @@ a:hover{
     position: fixed;
     left: 0;
     top: 0;
-    /* width: 16.6666666667%; */
     height: 100% !important;
 }
 
@@ -165,4 +164,14 @@ a:hover{
     padding-top: 20px;
     padding-bottom: 20px;
     position: relative;
+}
+
+@media (max-width: 575.98px) {
+    .content{
+        margin-left: 0;
+    }
+
+    .hero-wrap {
+        height: 80vh;
+    }
 }

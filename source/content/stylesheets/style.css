@@ -64,6 +64,14 @@ a:hover{
     z-index: 1;
 }
 
+.hero-header-lg{
+    font-size: 4rem !important;
+}
+
+.hero-header{
+    font-size: 3rem !important;
+}
+
 .hero-wrap {
     height: 100vh;
     position: relative;

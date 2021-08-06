@@ -16,9 +16,9 @@ tags:
       <div class="container my-auto">
         <div class="row">
           <div class="col-12 text-center">
-            <p class="fs-1 text-white mb-2 mb-md-3">Welcome</p>
-            <h2 class="text-white mb-2 mb-md-3"><span class="typed">I'm Jane Citizen</span></h2>
-            <p class="text-light mb-4">based in New York.</p>
+            <p class="fs-1 hero-header-lg text-white mb-2 mb-md-3">Welcome</p>
+            <h2 class="text-white hero-header mb-2 mb-md-3">I'm Jane Citizen</h2>
+            <p class="fs-3 text-light mb-4">based in New York.</p>
             <a href="#contact" class="btn btn-outline-primary shadow-none mt-2">Hire Me</a>
           </div>
         </div>

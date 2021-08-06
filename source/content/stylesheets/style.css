@@ -71,7 +71,7 @@ a:hover{
 }
 
 .hero-bg{
-    background-image: url("/content/images/intro-bg.jpeg"); 
+    background-image: url("/content/images/intro-bg.jpg"); 
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 

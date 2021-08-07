@@ -7,11 +7,4 @@ document.addEventListener('DOMContentLoaded', function () {
     new bootstrap.ScrollSpy(document.body, {
       target: '#navbar'
     });
-
-    // $(".animated").animate({
-    //   top: "+=10",
-    //   bottom: "+=10"
-    // }, 5000, function() {
-    //   // Animation complete.
-    // });
 }, false);

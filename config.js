@@ -21,7 +21,7 @@ const config = {
         name: 'folio',
         description: 'Thoughts, stories and ideas.',
         twitterHandle: '@mrvautin',
-        baseUrl: 'https://folio.squido.org',
+        baseUrl: 'https://squido-folio.markmoffat.com',
         sourcesExt: 'markdown',
         summaryLength: 250,
         port: 4965,
